@@ -1,0 +1,199 @@
+<!--
+Facultad de arquitecttura
+Colegio de Diseño Grafico
+Diseño de interfaces Graficas de Usuario
+
+201854606 
+Vazquez Sanchez Elian 
+-->
+<html>
+    <head>
+        <title>Enlaces en html</title>
+        <style type="text/css">
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            header,nav,main,footer{
+                width: 100%;
+                background-color: deeppink;
+                color: papayawhip;
+                padding: 50px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            header{
+                height:auto;
+                text-align: center;
+            }
+            nav{
+                height: auto;
+                background-color: hotpink;
+            }
+            main{
+                height:  auto;
+                background-color: lightpink;
+            }
+            footer{
+                height:  auto;
+            }
+            section{
+                width: 60%;
+                height: 400px;
+                background-color: blanchedalmond;
+                color: palevioletred;
+                margin-bottom: 30px;
+                padding: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                overflow-y: auto;
+            }
+            h2{
+                margin-bottom: 20px;
+            }
+            header h1, footer h6{
+                text-align: center;
+            }
+            ul{
+                text-align: center
+            }
+            ul li{
+                width: 10%;
+                height: 30px;
+                background-color: blanchedalmond;
+                color: palevioletred;
+                list-style-type: none;
+                display: inline-block;
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            a:{
+                text-decoration: none;
+            }
+            a:link{
+                color: deeppink;
+            }
+            a:visited{
+                color:deeppink;
+                
+                text-decoration: none;
+            }
+            a:active{
+                
+            }
+            a:hover{
+                color: deepskyblue;
+            }
+            nav ul li a{
+                text-decoration: none;
+            }
+            nav ul li:hover{
+                width: 12%;
+                background-color: deeppink;
+            }
+            nav ul li a:hover{
+                width: 30%;
+                color: antiquewhite;
+                
+            }
+            p{
+                margin-bottom: 20px;
+                text-align: justify;
+            }
+            main nav{
+                width: 50%;
+            }
+            main nav ul li{
+                width: 20%;
+            }
+            main nav ul li:hover{
+                width: 20%;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            table tr td{
+                text-align: center;
+                padding: 20px;
+            }
+            .img_boton{
+                width: 10%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            img{
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>ENLACES EN HTML</h1>
+            <div><a href="/index.html"> <img style="width: 24px" src="../imagenes/hogar.png"></a></div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../html/formatos-texto.html">Formatos</a></li>
+                <li><a href="../html/listas.html">Listas</a></li>
+                <li><a href="../html/Enlaces.html">Enlaces</a></li>
+                <li><a href="../html/Tablas.html">Tablas</a></li>
+                <li><a href="../html/imagenes.html">Imagenes</a></li>
+                <li><a href="../html/audios.html">Audio</a></li>
+                <li><a href="../html/Videos.html">Video</a></li>
+                <li><a href="../html/formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2 id="externos">Enlaces externos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum, mi quis lobortis luctus, nisi tellus imperdiet enim, vitae lacinia <a href="http://www.buap.mx" target="_blank">BUAP</a>lectus orci et mauris. Cras sodales turpis quis lacinia dignissim. In hac habitasse platea dictumst. Ut eleifend sodales erat, at fringilla nunc facilisis at. Ut nec volutpat felis, id commodo erat. Sed rhoncus lectus et commodo posuere. Maecenas accumsan massa nec elementum elementum. Sed nisi sem, venenatis ut vulputate nec, pulvinar eget arcu. Sed eleifend quam tortor, in lobortis velit vehicula ac. In vitae enim eros. Mauris viverra, dolor id vulputate eleifend, ante quam porttitor augue, sit amet condimentum urna.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec lectus at arcu tempor suscipit. Vestibulum semper magna a est volutpat egestas. Pellentesque auctor risus magna, sit amet maximus magna tempor sit amet. Vestibulum ut lorem ultrices, dictum justo nec, pellentesque lorem. Suspendisse luctus nibh eu sapien lacinia viverra. Fusce in volutpat tortor. Maecenas eleifend at nulla at vehicula. Morbi eu dolor id justo luctus dapibus sed non dui. In blandit ex ac lacus semper porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed lacinia feugiat ex. Aliquam tempus est id leo sagittis, eu tincidunt.</p>
+            </section>
+            <section>
+                <h2 id="internos">Enlaces interno</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet risus tellus. Etiam faucibus velit eleifend luctus aliquet. Curabitur turpis purus, consectetur id facilisis sit amet, auctor mollis ante. Aliquam erat volutpat. In mollis sem non nibh euismod fringilla. Cras nec rutrum tellus, sit amet <a href="../html/formatos-texto.html">Formatos de texto</a>convallis enim. Ut ac purus id felis posuere rhoncus id eu mauris. In vitae felis a diam aliquet ornare in quis purus. Ut euismod dapibus sapien. Vivamus pellentesque leo in enim molestie, nec eleifend.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec lectus at arcu tempor suscipit. Vestibulum semper magna a est volutpat egestas. Pellentesque auctor risus magna, sit amet maximus magna tempor sit amet. Vestibulum ut lorem ultrices, dictum justo nec, pellentesque lorem. Suspendisse luctus nibh eu sapien lacinia viverra. Fusce in volutpat tortor. Maecenas eleifend at nulla at vehicula. Morbi eu dolor id justo luctus dapibus sed non dui. In blandit ex ac lacus semper porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed lacinia feugiat ex. Aliquam tempus est id leo sagittis, eu tincidunt.</p>
+            </section>
+            <section>
+                <h2 id="archivos">Enlaces a archivo</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac nulla id enim rutrum laoreet vel id tortor. Aliquam eleifend neque nibh, eu euismod risus condimentum a.<a href="../pdf/Vazquez_Sanchez_Elian-Formatos-Texto.pdf" target="_blank">Codigo de practica formatos de texto</a> Fusce condimentum urna dolor, quis auctor elit ultricies non. Donec non mi at nisi commodo ullamcorper ut et leo. Vestibulum vitae lacinia mi. Fusce luctus quis augue a eleifend. Etiam sed volutpat eros.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec lectus at arcu tempor suscipit. Vestibulum semper magna a est volutpat egestas. Pellentesque auctor risus magna, sit amet maximus magna tempor sit amet. Vestibulum ut lorem ultrices, dictum justo nec, pellentesque lorem. Suspendisse luctus nibh eu sapien lacinia viverra. Fusce in volutpat tortor. Maecenas eleifend at nulla at vehicula. Morbi eu dolor id justo luctus dapibus sed non dui. In blandit ex ac lacus semper porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed lacinia feugiat ex. Aliquam tempus est id leo sagittis, eu tincidunt.</p>
+            </section>
+            <section>
+                <h2 id="descarga">Enlaces a Descarga</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet risus tellus. Etiam faucibus velit eleifend luctus aliquet. Curabitur turpis <a href="../imagenes/Vazquez%20Sanche%20Elian-Formatos-Texto.png" download>previsualizacon de pagina </a> purus, consectetur id facilisis sit amet, auctor mollis ante. Aliquam erat volutpat. In mollis sem non nibh euismod fringilla. Cras nec rutrum tellus, sit amet convallis enim. Ut ac purus id felis posuere rhoncus id eu </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec lectus at arcu tempor suscipit. Vestibulum semper magna a est volutpat egestas. Pellentesque auctor risus magna, sit amet maximus magna tempor sit amet. Vestibulum ut lorem ultrices, dictum justo nec, pellentesque lorem. Suspendisse luctus nibh eu sapien lacinia viverra. Fusce in volutpat tortor. Maecenas eleifend at nulla at vehicula. Morbi eu dolor id justo luctus dapibus sed non dui. In blandit ex ac lacus semper porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed lacinia feugiat ex. Aliquam tempus est id leo sagittis, eu tincidunt.</p>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#externos">Externos</a></li>
+                    <li><a href="#internos">Internos</a></li>
+                    <li><a href="#archivos">Archivos</a></li>
+                    <li><a href="#descarga">Descargas</a></li>
+                </ul>
+            </nav>
+        </main>
+        <footer>
+           <table>
+            <tbody>
+                <tr>
+                    <td><a href="https://www.facebook.com/elian.vazquezsanchez/"><img class="img_boton" src="/imagenes/facebook.png"></a></td>
+                    <td><a href="https://www.instagram.com/elianvazquezsanchez/"><img class="img_boton" src="/imagenes/instagram.png"></a></td>
+                    <td><a href="https://x.com/ElianVS2"><img class="img_boton" src="/imagenes/gorjeo.png"></a></td>
+                </tr>
+            </tbody>
+        </table>
+            <h6>Elaborado por Elian Vazquez Sanchez</h6>
+        </footer>
+    </body>
+</html>

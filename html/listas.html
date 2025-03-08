@@ -1,0 +1,287 @@
+<!--
+Facultad de arquitecttura
+Colegio de Diseño Grafico
+Diseño de interfaces Graficas de Usuario
+
+201854606 
+Vazquez Sanchez Elian 
+-->
+<html>
+    <head>
+        <title>listas de navegacion</title>
+        <style type="text/css">
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            header,nav,main,footer{
+                width: 1200px;
+                padding: 50px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            header{
+                height:auto;
+                background-color: darkblue;
+                color:paleturquoise;
+                text-align: center;
+            }
+            nav{
+                height: auto;
+                background-color: cadetblue;
+                padding-left: 50px;
+                padding-right: 50px; 
+            }
+            main{
+                height: auto;
+                background-color: lightblue;
+                
+            }
+            footer{
+                height: 50px;
+                background-color: darkblue;
+                color:aqua;
+            }
+            section{
+                width: 900px;
+                height:auto;
+                background-color: gainsboro;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding: 50px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            nav ul{
+                text-align: center
+            }
+            nav ul li{
+                width: auto;
+                height: 30px;
+                background-color: blanchedalmond;
+                color: palevioletred;
+                list-style-type: none;
+                display: inline-block;
+                text-align: center;
+                padding: 10px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            nav ul li a{
+                text-decoration: none;
+            }
+            ul,ol{
+                padding-left: 30px;
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+            main section dl{
+                width: 800px
+            }
+            main section dl dt{
+                font-weight: bold;
+                margin-bottom: :20px;
+                padding-bottom: 20px;
+                
+            }
+            h1,h2{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            main nav{
+                width: 50%;
+            }
+            footer{
+                text-align: center;
+                height: auto;
+            }
+            a:{
+                text-decoration: none;
+            }
+            nav ul li:hover{
+                width: 12%;
+                background-color: darkcyan;
+            }
+            nav ul li a:hover{
+                width: 30%;
+                color:chartreuse;
+            }
+            table{
+                margin-left: auto;
+                margin-top: auto;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            table tr td{
+                text-align: center;
+                padding: 20px;
+            }     
+            table{
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            table tr td{
+                text-align: center;
+                padding: 20px;
+            }
+            .img_boton{
+                width: 10%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            img{
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--la etiqueta header debe cintener-->
+        <header>
+            <h1>Listas en html</h1>
+            <a href="/index.html"> <img style="width: 24px" src="../imagenes/hogar.png"></a>
+        </header>
+        <!-- laetiqueta nav debe contener-->
+        <nav>
+             <ul>
+                <li><a href="../html/formatos-texto.html">Formatos</a></li>
+                <li><a href="../html/listas.html">Listas</a></li>
+                <li><a href="../html/Enlaces.html">Enlaces</a></li>
+                <li><a href="../html/Tablas.html">Tablas</a></li>
+                <li><a href="../html/imagenes.html">Imagenes</a></li>
+                <li><a href="../html/audios.html">Audio</a></li>
+                <li><a href="../html/Videos.html">Video</a></li>
+                <li><a href="../html/formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <!--la etiqueta main debe contener-->
+        <main>
+            <section>
+                <h2 id="desordenadas">Listas desordenadas</h2>
+                <p>La creatividad no es una característica única con la que nacen unos pocos, sino que es una habilidad que pude ser desarrollada y utilizada por cualquier persona si es que se practica el modo de pensamiento creativo de forma regular y constante.Buscar respuestas por medios diferentes a los convencionales nos ayuda a ampliar nuestras posibilidades para encontrar diferentes soluciones para un mismo problema.</p>
+                <ul>
+                    <li>Argentina</li>
+                    <li>México</li>
+                    <li>Japon</li>
+                    <li>Italia</li>
+                    <li>Marruecos</li>
+                    <li>Corea</li>
+                    <li>China</li>
+                    <li>India</li>
+                    <li>Venezuela</li>
+                    <li>Colombia</li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="ordenadas">Listas ordenadas</h2>
+                <p>La creatividad no es una característica única con la que nacen unos pocos, sino que es una habilidad que pude ser desarrollada y utilizada por cualquier persona si es que se practica el modo de pensamiento creativo de forma regular y constante.Buscar respuestas por medios diferentes a los convencionales nos ayuda a ampliar nuestras posibilidades para encontrar diferentes soluciones para un mismo problema.</p>
+                <ol>
+                    <li>Jalisco</li>
+                    <li>Veracruz</li>
+                    <li>Guanajuato</li>
+                    <li>Colioma</li>
+                    <li>Michocan</li>
+                    <li>Oaxaca</li>
+                    <li>Tamaulipas</li>
+                    <li>Queretaro</li>
+                    <li>Puebla</li>
+                    <li>Chiapas</li>
+                    <li>Sonora</li>
+                </ol>
+            </section>
+            <section>
+                <h2 id="mixtas">Listas mixtas</h2>
+                <p>Aprendemos imitando a los demás y para poder desarrollar el pensamiento creativo es necesario imitar el trabajo de alguien más solo para nuestro beneficio y de esta manera poder pensar nuestras propias ideas partiendo de lo aprendido al imitar a otros.Para desarrollar el pensamiento creativo se tiene que perder el miedo a fallar y experimentar con varias ideas pues se aprenderá más de los fracasos y esto nos guiará a encontrar la respuesta correcta.La disciplina al aplicar el pensamiento creativo nos ayudara a hacer el proceso de forma automática y cada vez de forma más fácil llegaran a diferentes ideas para resolver alguna situación. </p>
+                <ol>
+                    <li>Puebla
+                        <ul>
+                            <li>Huauchinango</li>
+                            <li>Cholula</li>
+                            <li>Atlixco</li>
+                        </ul>
+                    </li>
+                    <li>Tlaxcala
+                        <ul>
+                            <li>Chiautempan</li>
+                            <li>Contla de Juan Cuamatzi</li>
+                            <li>Huamantla</li>
+                            <li>Apizaco</li>
+                            <li>Tetla de Ocampo</li>
+                        </ul>
+                    </li>
+                    <li>Veracruz
+                        <ul>
+                            <li>Boca del Rio </li>
+                            <li>Poza Rica</li>
+                            <li>Tierra Blanca</li>
+                            <li>Cuaxacualpa</li>
+                        </ul>
+                    </li>
+                    <li>Oaxaca
+                        <ul>
+                            <li>Huajuapan</li>
+                            <li>Hierve el Agua</li>
+                            <li>San Jan Chamula</li>
+                        </ul>
+                    </li>
+                    <li>Jalisco
+                        <ul>
+                            <li>Tequila</li>
+                            <li>Zapopan</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h2 id="descripcion">Lista de descripcion</h2>
+                <p>La creatividad no es una característica única con la que nacen unos pocos, sino que es una habilidad que pude ser desarrollada y utilizada por cualquier persona si es que se practica el modo de pensamiento creativo de forma regular y constante.</p>
+                <dl>
+                    <dt>Republica</dt>
+                    <dd>La creatividad no es una característica única con la que nacen unos pocos, sino que es una habilidad que pude ser desarrollada y utilizada por cualquier persona si es que se practica el modo de pensamiento creativo de forma regular y constante.Buscar respuestas por medios diferentes a los convencionales nos ayuda a ampliar nuestras posibilidades para encontrar diferentes soluciones para un mismo problema.</dd>
+                    <dt>Estado</dt>
+                    <dd>La creatividad no es una característica única con la que nacen unos pocos, sino que es una habilidad que pude ser desarrollada y utilizada por cualquier persona si es que se practica el modo de pensamiento creativo de forma regular y constante.Buscar respuestas por medios diferentes a los convencionales nos ayuda a ampliar nuestras posibilidades para encontrar diferentes soluciones para un mismo problema.</dd>
+                    <dt>Municipio</dt>
+                    <dd>La creatividad no es una característica única con la que nacen unos pocos, sino que es una habilidad que pude ser desarrollada y utilizada por cualquier persona si es que se practica el modo de pensamiento creativo de forma regular y constante.Buscar respuestas por medios diferentes a los convencionales nos ayuda a ampliar nuestras posibilidades para encontrar diferentes soluciones para un mismo problema.</dd>
+                    <dt>Region</dt>
+                    <dd>La creatividad no es una característica única con la que nacen unos pocos, sino que es una habilidad que pude ser desarrollada y utilizada por cualquier persona si es que se practica el modo de pensamiento creativo de forma regular y constante.Buscar respuestas por medios diferentes a los convencionales nos ayuda a ampliar nuestras posibilidades para encontrar diferentes soluciones para un mismo problema.La creatividad no es una característica única con la que nacen unos pocos, sino que es una habilidad que pude ser desarrollada y utilizada por cualquier persona si es que se practica el modo de pensamiento creativo de forma regular y constante.Buscar respuestas por medios diferentes a los convencionales nos ayuda a ampliar nuestras posibilidades para encontrar diferentes soluciones para un mismo problema.</dd>
+                    <dt>Junta Auxiliar</dt>
+                    <dd>La creatividad no es una característica única con la que nacen unos pocos, sino que es una habilidad que pude ser desarrollada y utilizada por cualquier persona si es que se practica el modo de pensamiento creativo de forma regular y constante.Buscar respuestas por medios diferentes a los convencionales nos ayuda a ampliar nuestras posibilidades para encontrar diferentes soluciones para un mismo problema.</dd>
+                    <dt>Colonia</dt>
+                    <dd>La creatividad no es una característica única con la que nacen unos pocos, sino que es una habilidad que pude ser desarrollada y utilizada por cualquier persona si es que se practica el modo de pensamiento creativo de forma regular y constante.Buscar respuestas por medios diferentes a los convencionales nos ayuda a ampliar nuestras posibilidades para encontrar diferentes soluciones para un mismo problema.</dd>
+                    <dt>Fraccionamiento</dt>
+                    <dd>La creatividad no es una característica única con la que nacen unos pocos, sino que es una habilidad que pude ser desarrollada y utilizada por cualquier persona si es que se practica el modo de pensamiento creativo de forma regular y constante.Buscar respuestas por medios diferentes a los convencionales nos ayuda a ampliar nuestras posibilidades para encontrar diferentes soluciones para un mismo problema.</dd>
+                </dl>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#desordenadas">Desordenadas</a></li>
+                    <li><a href="#ordenadas">Ordenadas</a></li>
+                    <li><a href="#mixtas">Mixtas</a></li>
+                    <li><a href="#descripcion">Descripcion</a></li>
+                </ul>
+            </nav>
+        </main>
+        <!-- la etiquta footer debe contener--> 
+        <footer>
+           <table>
+            <tbody>
+                <tr>
+                    <td><a href="https://www.facebook.com/elian.vazquezsanchez/"><img class="img_boton" src="../imagenes/facebook.png"></a></td>
+                    <td><a href="https://www.instagram.com/elianvazquezsanchez/"><img class="img_boton" src="../imagenes/instagram.png"></a></td>
+                    <td><a href="https://x.com/ElianVS2"><img class="img_boton" src="../imagenes/gorjeo.png"></a></td>
+                </tr>
+            </tbody>
+        </table>
+            <h6>Elaborado por Elian Vazquez Sanchez</h6>
+        </footer>
+    </body>
+
+</html>

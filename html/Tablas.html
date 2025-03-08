@@ -1,0 +1,530 @@
+<!--
+Facultad de Arquitecttura
+Colegio de Diseño Grafico
+Diseño de interfaces Graficas de Usuario
+
+201854606 
+Vazquez Sanchez Elian 
+-->
+<html>
+    <head>
+        <title>Tablas</title>
+        <style type="text/css">
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+            heder,nav,main,footer{
+                width: 100%;
+                padding: 30px;
+                color: bisque;
+                
+            }
+            header{
+                height: 100px;
+                background-color: chocolate;
+                color: bisque;
+                
+            }
+            nav{
+                height: auto;
+                background-color: brown;
+                
+            }
+            main{
+                height: auto;
+                background-color: burlywood;
+            }
+            footer{
+                height: auto;
+                background-color: brown;
+                
+            }
+            section{
+                width: 70%;
+                height: auto;
+                background-color: bisque;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 30px;
+                color: brown;
+                padding: 30px;
+                overflow-x: auto;
+            }
+            h2{
+                margin-bottom: 20px;
+            }
+            header,footer{
+                text-align: center;
+            }
+            nav ul{
+                text-align: center;
+            }
+            nav ul li{
+                width: 10%;
+                background-color: sandybrown;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                list-style-type: none;
+                padding: 10px;
+                display: inline-block;
+            }
+            nav ul li a{
+                text-decoration: none;
+            }
+            nav ul li:hover{
+                width: 12%;
+                background-color:greenyellow;
+                
+            }
+            nav ul li a:hover{
+                color: red;
+            }
+            p{
+                margin-bottom: 30px;
+            }
+            table{
+                background-color: aquamarine;
+            }
+            #tab_buap{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border-spacing: 10px;
+                border-collapse: collapse;
+            }
+            #tab_buap th{
+                background-color: royalblue;
+                color: aliceblue;
+                height: 30px;
+            }
+            #tab_buap td{
+                background-color: aliceblue;
+                color: midnightblue;
+                height: 30px;
+                padding: 10px;
+                    
+            }
+            #tab_buap th, #tab_bap td{
+                border-width: 3px;
+                border-color: mediumblue;
+                border-style: solid;
+            }
+            #tab_libros{
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                border-collapse: collapse;
+            }
+            #tab-libros th{
+                height: 50px;
+                background-color: saddlebrown;
+                color: bisque;
+            }
+            #tab_libros thead{
+                background-color: brown;
+                color: bisque;
+                height: 50px;
+            }
+            #tab_libros tbody tr:nth-child(even){
+                background-color: sandybrown;
+                color: saddlebrown;
+            }
+            #tab_libros tbody tr:nth-child(odd){
+                background-color: beige;
+                color: saddlebrown;
+            }
+            #tab_libros tfoot tr{
+                background-color: brown;
+                color: beige;
+            }
+            #tab_libros td{
+                height: 30px;
+                padding: 20px;
+               /*
+                esta propiedad separa las celdas de la tabla
+                border-spacing: 10px;*/
+                border-collapse: collapse;
+            }
+            #tab_pelis{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: burlywood;;
+            }
+            #tab_pelis th{
+                background-color: saddlebrown;
+                color: bisque;
+                height: 50px;
+                padding: 10px;
+            }
+           #tab_pelis, #tab_pelis th, #tab_pelis td{
+                border-width: 3px;
+                border-style: solid;
+                border-color: rosybrown;
+            }
+            #tab_pelis td{
+                height: 30px;
+                padding: 20px;
+            }
+           #tab_pelis tbody tr:hover{
+                background-color: yellow;
+            }
+            /*#tab_pelis tbody tr td:hover{
+                background-color: yellow;
+            }*/
+            #tab_series{
+                width: 1500px;
+                border-collapse: collapse;
+                background-color: burlywood;
+            }
+            #tab_series th, #tab_series td{
+                border: 1px solid brown;
+                padding: 10px;
+            }
+            #tab_series th{
+                background-color: darkgoldenrod;
+                color: saddlebrown;
+            }
+            img{
+                margin-top: 20px;
+            }
+            .img_boton{
+                width: 10%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .tab_foot{
+                background-color: brown;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+                border-collapse: collapse;
+                text-align: center;
+                text-align: center;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Tablas</h1>
+            <div><a href="/index.html"> <img style="width: 24px" src="../imagenes/hogar.png"></a></div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../html/formatos-texto.html">Formatos</a></li>
+                <li><a href="../html/listas.html">Listas</a></li>
+                <li><a href="../html/Enlaces.html">Enlaces</a></li>
+                <li><a href="../html/Tablas.html">Tablas</a></li>
+                <li><a href="../html/imagenes.html">Imagenes</a></li>
+                <li><a href="../html/audios.html">Audio</a></li>
+                <li><a href="../html/Videos.html">Video</a></li>
+                <li><a href="../html/formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Tabla Simple</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum eu ligula quis volutpat. Quisque neque elit, molestie at posuere eget, sollicitudin at quam. Praesent malesuada, tellus at sagittis vulputate, est lorem mollis quam, vitae fringilla mi dolor id enim. Praesent a lorem eros. Nunc dictum nibh est, quis convallis sem viverra ac. Etiam at porta nulla. Morbi ultricies lobortis orci, sit amet venenatis massa luctus sit amet. Etiam tellus justo, luctus sed dictum quis, eleifend quis ante. Duis nec dapibus arcu. Vestibulum molestie cursus volutpat. Quisque sed aliquet orci. Vivamus a est ut urna sodales semper. Curabitur nunc lectus.</p>
+                <table id="tab_buap" border="1">
+                    <thead>
+                        <tr>
+                            <th>Matricula</th>
+                            <th>Nombre</th>
+                            <th>Facultad</th>
+                            <th>Celular</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>202297669</td>
+                            <td>Maria Jose Rojas Perez</td>
+                            <td>Contaduria</td>
+                            <td>22233344455</td>
+                            <td>mar.rojas@gmail.com</td>
+                        
+                        </tr><tr>
+                            <td>201857609</td>
+                            <td>Juan Alejandro Rojas Minero</td>
+                            <td>Arquitectura</td>
+                            <td>2567856789</td>
+                            <td>jua56n@gmail.com</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>202044707</td>
+                            <td>Jose Maria Hernadez Flores</td>
+                            <td>Biologia</td>
+                            <td>2223456754</td>
+                            <td>chema36@gmail.com</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>202156899</td>
+                            <td>Jose Hernandez Lopez</td>
+                            <td>Quimica</td>
+                            <td>2223234568</td>
+                            <td>jose_hl@gmail.com</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>202234567</td>
+                            <td>Valeria Guzman Perez</td>
+                            <td>Derecho</td>
+                            <td>2223655467</td>
+                            <td>valegp@gamil.com</td>
+                        
+                        </tr>
+                           <tr>
+                            <td>201956789</td>
+                            <td>Gabriel Martinez Diaz</td>
+                            <td>Arquitectura</td>
+                            <td>2225765689</td>
+                            <td>gabo46@gmail.com</td>
+                        
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Tabla Cebra</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum eu ligula quis volutpat. Quisque neque elit, molestie at posuere eget, sollicitudin at quam. Praesent malesuada, tellus at sagittis vulputate, est lorem mollis quam, vitae fringilla mi dolor id enim. Praesent a lorem eros. Nunc dictum nibh est, quis convallis sem viverra ac. Etiam at porta nulla. Morbi ultricies lobortis orci, sit amet venenatis massa luctus sit amet. Etiam tellus justo, luctus sed dictum quis, eleifend quis ante. Duis nec dapibus arcu. Vestibulum molestie cursus volutpat. Quisque sed aliquet orci. Vivamus a est ut urna sodales semper. Curabitur nunc lectus.</p>
+                <table id="tab_libros" border="1">
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Autor</th>
+                            <th>Editorial</th>
+                            <th>Año</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cronicas de Narnia</td>
+                            <td>C.S. Lewis</td>
+                            <td>Planeta </td>
+                            <td>1950 </td>
+                            <td>300.00</td>
+                        </tr>
+                        <tr>
+                            <td>Dracula</td>
+                            <td>Bram Stoker</td>
+                            <td>Orion </td>
+                            <td>1897</td>
+                            <td>100.00</td>
+                        </tr>
+                        <tr>
+                            <td>Dune</td>
+                            <td>Frank Herbert</td>
+                            <td>Penguin</td>
+                            <td>1965</td>
+                            <td>350.00</td>
+                        </tr>
+                        <tr>
+                            <td>Meridiano de sangre</td>
+                            <td>Cormac McCarthy</td>
+                            <td>Planeta</td>
+                            <td>1986</td>
+                            <td>250.00</td>
+                        </tr>
+                        <tr>
+                            <td>La Metamorfosis</td>
+                            <td>Franz Kafka</td>
+                            <td>Trilas</td>
+                            <td>1915</td>
+                            <td>100.00</td>
+                        </tr>
+                        <tr>
+                            <td>Odisea</td>
+                            <td>Homero</td>
+                            <td>Planeta</td>
+                            <td>siglo VIII a.C.</td>
+                            <td>80.00</td>
+                        </tr>
+                        
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td></td>
+                            <td>Total</td>
+                            <td>1180.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Tabla Hover</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum eu ligula quis volutpat. Quisque neque elit, molestie at posuere eget, sollicitudin at quam. Praesent malesuada, tellus at sagittis vulputate, est lorem mollis quam, vitae fringilla mi dolor id enim. Praesent a lorem eros. Nunc dictum nibh est, quis convallis sem viverra ac. Etiam at porta nulla. Morbi ultricies lobortis orci, sit amet venenatis massa luctus sit amet. Etiam tellus justo, luctus sed dictum quis, eleifend quis ante. Duis nec dapibus arcu. Vestibulum molestie cursus volutpat. Quisque sed aliquet orci. Vivamus a est ut urna sodales semper. Curabitur nunc lectus.</p>
+           
+            <table id="tab_pelis">
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Director</th>
+                            <th>Año de estreno</th>
+                            <th>Genero</th>
+                            <th>Recaudacion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dune</td>
+                            <td>Denis Villeneuve</td>
+                            <td>2021 </td>
+                            <td>Ciencia ficcion / Aventura</td>
+                            <td>US $433 758 183</td>
+                        </tr>
+                        <tr>
+                            <td>Wonka</td>
+                            <td>Paul King</td>
+                            <td>2023</td>
+                            <td>Fantasia/ Musical</td>
+                            <td>US $634 402 312</td>
+                        </tr>
+                        <tr>
+                            <td>Shrek</td>
+                            <td>Andrew Adamson/Vicky Jenson</td>
+                            <td>2001</td>
+                            <td>Aventura/Comedia</td>
+                            <td>US $488 351 320</td>
+                        </tr>
+                        <tr>
+                            <td>Piratas del Caribe</td>
+                            <td>Gore Verbinski </td>
+                            <td>2003</td>
+                            <td>Aventura/Fantasia</td>
+                            <td>US $ 654.264.015</td>
+                        </tr>
+                        <tr>
+                            <td>Kung fu Panda</td>
+                            <td>Mark Osborne/ John Wayne Stevenson</td>
+                            <td>2008</td>
+                            <td>Aventura/ Acción</td>
+                            <td>US $631.744.560</td>
+                        </tr>
+                        <tr>
+                            <td>Parasitos</td>
+                            <td>Bong Joon-ho</td>
+                            <td>2019</td>
+                            <td>Drama/ Suspenso</td>
+                            <td>US $254 088 600</td>
+                        </tr>
+                        
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td></td>
+                            <td>Total</td>
+                            <td>1180.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Tabla Overflow</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ligula et velit consequat fringilla vitae a neque. Mauris tristique tellus eu tellus faucibus cursus. Ut sollicitudin nisi at arcu tempor imperdiet. Mauris aliquet, odio eget sodales suscipit, sem dui feugiat odio, eu iaculis nulla leo facilisis magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse quis dui facilisis, venenatis dui sed, bibendum justo. Cras pretium metus id turpis imperdiet posuere. Vestibulum quis pretium sapien, semper accumsan arcu. Aliquam pharetra tortor ac fermentum volutpat. Vestibulum convallis orci vitae rhoncus elementum. Sed finibus convallis neque.</p>
+                <table id="tab_series">
+                    <thead>
+                        <tr>
+                            <th>Serie</th>
+                            <th>Año</th>
+                            <th>Genero</th>
+                            <th colspan="2">Creador</th>
+                            <th colspan="2">Pais</th>
+                            <th>Temporadas</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>House of cards</td>
+                            <td>2013</td>
+                            <td>Policial</td>
+                            <td>Beau Willimon</td>
+                            <td> </td>
+                            <td>Estados unidos</td>
+                            <td> </td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Hora de Aventura</td>
+                            <td>2018</td>
+                            <td>Aventura</td>
+                            <td>Pendelton Ward</td>
+                            <td> </td>
+                            <td>Estados Unidos</td>
+                            <td>Suecia</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Dr. House</td>
+                            <td>2004</td>
+                            <td>Drama medico</td>
+                            <td>David Shore</td>
+                            <td> </td>
+                            <td>Estados Unidos</td>
+                            <td> </td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Belleza Verdadera</td>
+                            <td>2020</td>
+                            <td>Romance</td>
+                            <td> Kim Sang-hyup</td>
+                            <td> </td>
+                            <td>Corea del Sur</td>
+                            <td> </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Shogun</td>
+                            <td>2024</td>
+                            <td>Dram Historico</td>
+                            <td>Rachel kondor</td>
+                            <td>justin marks</td>
+                            <td>Japon</td>
+                            <td> </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Club de cuervos</td>
+                            <td>2015</td>
+                            <td>Comedia Dramatica</td>
+                            <td>Gaz alazraki</td>
+                            <td>Michael Lamb</td>
+                            <td>México</td>
+                            <td> </td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </section>
+            
+        </main>
+        <footer>
+           <table class="tab_foot">
+            <tbody>
+                <tr>
+                    <td><a href="https://www.facebook.com/elian.vazquezsanchez/"><img class="img_boton" src="../imagenes/facebook.png"></a></td>
+                    <td><a href="https://www.instagram.com/elianvazquezsanchez/"><img class="img_boton" src="../imagenes/instagram.png"></a></td>
+                    <td><a href="https://x.com/ElianVS2"><img class="img_boton" src="../imagenes/gorjeo.png"></a></td>
+                </tr>
+            </tbody>
+        </table>
+            <h6>Elaborado po Elian Vazquez Sanchez</h6>
+        </footer>
+    </body>
+</html>
